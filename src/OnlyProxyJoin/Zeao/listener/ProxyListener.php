@@ -1,7 +1,7 @@
 <?php 
 namespace OnlyProxyJoin\Zeao\listener;
 
-use pocketmine\event\player\PlayerPreLoginEvent;
+use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\Listener;
 use pocketmine\utils\TextFormat;
 
@@ -11,12 +11,10 @@ class ProxyListener implements Listener{
     public function __construct(Loader $plugin){
         $this->plugin = $plugin;
 }
-public function onJoin(PlayerPreLoginEvent $event){
+public function onJoin(PlayerJoinEvent $event){
     $player = $event->getPlayer();
     if($player->getXuid() !== ""){
-        
-        $event->setKickMessage(TextFormat::colorize($this->plugin->getConfig()->get("Kick-Message")));
-        $event->setCancelled();
+        $player->kick(TextFormat::colorize($this->plugin->getConfig()->get("Kick-Message")));
     }
 }
 }

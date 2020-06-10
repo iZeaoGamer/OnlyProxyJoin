@@ -5,7 +5,7 @@ use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\Listener;
 use pocketmine\utils\TextFormat;
 
-use NoProxy\Zeao\Loader;
+use OnlyProxyJoin\Zeao\Loader;
 class ProxyListener implements Listener{
     private $plugin;
     public function __construct(Loader $plugin){

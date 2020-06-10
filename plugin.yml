@@ -1,0 +1,6 @@
+name: OnlyProxyJoin
+version: 0.0.1
+api: 3.0.0
+author: iZeaoGamer
+main: OnlyProxyJoin\Zeao\Loader
+description: "A plugin to allow players to only join via the proxy."

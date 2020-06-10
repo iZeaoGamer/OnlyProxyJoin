@@ -1,0 +1,5 @@
+## Welcome to OnlyProxyJoin's configurations file.
+# Colorcodes are supported within the kick message.
+# Use the & symbol for color coding.
+
+Kick-Message: "&cPlease join via the proxy."

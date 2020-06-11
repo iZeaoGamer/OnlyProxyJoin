@@ -1,5 +1,5 @@
 ## Description
-This plugin has a No Proxy implementation, where if you join a specific server, and not the proxy, it'll kick you within the correct reason.
+This plugin has a No Proxy implementation, where if you join a specific server, and not the proxy, it'll kick you within the correct reason. This plugin also adds the feature to send players to the proxy IP. This can be changed in the config.yml.
 
 
 ## How does this plugin work?
